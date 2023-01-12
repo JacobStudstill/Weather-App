@@ -21,11 +21,14 @@
         <div class="column is-one-quarter">
             <div class="has-text-centered is-size-3"><h2>Search for a city: </h2>
             </div>
-            <input class="input is-primary" type="text" placeholder="City">
-            <button class= "button mt-3 is-fullwidth">Search</button>
+            <input class="input is-primary" id="city-input" type="text" placeholder="City">
+            <button class= "button mt-3 is-fullwidth" id="city-button">Search</button>
         </div>
         <div class="column is-three-quarters">
-            <div class="column has-text-centered">Testing</div>
+            <div class="column has-text-centered is-size-3 city-name" id="city-name">Testing</div>
+            <div class="column has-text-left" id="city-temp"></div>
+            <div class="column has-text-left" id="city-wind">Testing</div>
+            <div class="column has-text-left" id="city-humidity">Testing</div>
                 <div class="is-flex is-flex-direction-row is-one-fifth">
                     <div class="column day-1">Testing </div>
                     <div class="column day-2">Testing </div>
