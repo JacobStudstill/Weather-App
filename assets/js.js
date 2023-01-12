@@ -1,5 +1,8 @@
 var getStateBtn = document.getElementById('city-button')
 var cityName = document.getElementById('city-name')
+var cityTemp = document.getElementById('city-temp')
+var cityWind = document.getElementById('city-wind')
+var cityHumidity = document.getElementById('city-humidity')
 
 
 function getState(){
@@ -12,7 +15,9 @@ function getState(){
             return response.json();
         })
         .then(function (data){
-            console.log(data.main.temp)
+            cityTemp.textContent = "Temp: " + data.main.temp + " °F"
+            cityWind.textContent = "Wind: " + data.wind.speed + " MPH"
+            cityHumidity.textContent = "Humidity: " + data.main.temp + " %"
         })
 
 
